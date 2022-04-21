@@ -11292,6 +11292,10 @@ html {
   scroll-padding-top: calc(4.5rem - 1px);
 }
 
+.page-section-about-me{
+  font-size: 2rem;
+}
+
 .page-section {
   padding: 6rem 0;
 }
@@ -11299,6 +11303,7 @@ html {
   font-size: 2.25rem;
   line-height: 2rem;
 }
+
 @media (min-width: 992px) {
   .page-section .page-section-heading {
     font-size: 3rem;
