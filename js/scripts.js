@@ -82,9 +82,9 @@ punto.forEach((cadaPunto, i)=> {
 });*/
 
 const imgDevErp = [
-    'assets/img/portfolio/imgEleJones/img1.png',
-    'assets/img/portfolio/imgEleJones/img2.png',
-    'assets/img/portfolio/imgEleJones/img3.png'
+    'assets/imgEleJones/img1.png',
+    'assets/imgEleJones/img2.png',
+    'assets/imgEleJones/img3.png'
 ];
 
 let posicionActual = 0;
