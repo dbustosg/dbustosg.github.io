@@ -11523,6 +11523,12 @@ html {
   margin-right: auto;
 }
 
+.footer-social{
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /*
 .carrousel{
   margin-bottom: 3em;

@@ -51,52 +51,41 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 });
 
-/*
-const grande = document.querySelector('.carrousel')
-const punto = document.querySelectorAll('.punto')
-
-//Cuando CLICK en cada punto
-    //Saber la posición de ese punto
-    //Aplicar un transform translateX al grande
-    //Quitar la clase activo de todos los puntos
-    //Añadir la clase activo al punto que hemos hecho click
-punto.forEach((cadaPunto, i)=> {
-    punto[0].classList.add( 'activo')
-    //Asignamos un click a CadaPunto
-    punto[i].addEventListener('click',()=>{
-        //Cogemos la posicion y calculamos el espacio de desplazamiento
-        let position = i
-        let operacion = position * -(100/3)
-
-        //Movemos el carrusel
-        grande.style.transform = `translateX(${ operacion }%)`
-
-        //Quitamos la clase a todos los puntos
-        punto.forEach((cadaPunto,i)=>{
-            punto[i].classList.remove( 'activo')
-        })
-
-        //Añadimos la clase al punto pulsado
-        punto[i].classList.add( 'activo')
-    })
-});*/
-
-const imgDevErp = [
-    'assets/imgEleJones/img1.png',
-    'assets/imgEleJones/img2.png',
-    'assets/imgEleJones/img3.png'
-];
-
+let item = 0;
+let $imagen;
 let posicionActual = 0;
-let $botonRetroceder = document.querySelector('#retroceder');
-let $botonAvanzar = document.querySelector('#avanzar');
-let $imagen = document.querySelector('#img');
+
+function whoItem(numberItem){
+    switch(numberItem){
+        case 1:
+            item = 0;
+            $imagen = document.querySelector('#imgEleJones');
+            break;
+        case 2:
+            item = 1;
+            $imagen = document.querySelector('#imgDevErp');
+            break;
+    }
+    renderizarImagen();
+}
+
+const imagenes = [
+    //EleJones
+    ['assets/imgEleJones/img1.png',
+    'assets/imgEleJones/img2.png',
+    'assets/imgEleJones/img3.png'],
+    //DevErp
+    ['assets/imgDevErp/img1.png',
+    'assets/imgDevErp/img2.png',
+    'assets/imgDevErp/img3.png',
+    'assets/imgDevErp/img4.png']
+];
 
 /**
      * Funcion que cambia la foto en la siguiente posicion
      */
  function pasarFoto() {
-    if(posicionActual >= imgDevErp.length - 1) {
+    if(posicionActual >= imagenes[item].length - 1) {
         posicionActual = 0;
     } else {
         posicionActual++;
@@ -109,7 +98,7 @@ let $imagen = document.querySelector('#img');
  */
 function retrocederFoto() {
     if(posicionActual <= 0) {
-        posicionActual = imgDevErp.length - 1;
+        posicionActual = imagenes[item].length - 1;
     } else {
         posicionActual--;
     }
@@ -120,12 +109,9 @@ function retrocederFoto() {
  * Funcion que actualiza la imagen de imagen dependiendo de posicionActual
  */
 function renderizarImagen () {
-    $imagen.src = `${imgDevErp[posicionActual]}`;
+    $imagen.src = `${imagenes[item][posicionActual]}`;
 }
 
- // Iniciar
- renderizarImagen();
-
- // Eventos
- $botonAvanzar.addEventListener('click', pasarFoto);
- $botonRetroceder.addEventListener('click', retrocederFoto);
+// Eventos
+[...document.querySelectorAll('#avanzar')].forEach(btn => btn.addEventListener('click',pasarFoto));
+[...document.querySelectorAll('#retroceder')].forEach(btn => btn.addEventListener('click',retrocederFoto));
