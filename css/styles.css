@@ -11512,3 +11512,45 @@ html {
 .copyright {
   background-color: #1a252f;
 }
+
+.btn-modal{
+  margin-bottom: 1rem;
+}
+
+/*
+.carrousel{
+  margin-bottom: 3em;
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  background: #e0e0e0;
+  box-shadow:  20px 20px 60px #bebebe,
+              -20px -20px 60px #ffffff;
+}
+
+#img{
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}*/
+
+/*.carrousel .puntos{
+  width: 100%;
+  padding: .4em;
+  margin: 1em 0 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.carrousel .punto{
+  list-style: none;
+  width: 2em;
+  height: 2em;
+  margin: 1em 1em 0;
+  border-radius: 50px;
+  background: #bebebe;
+  box-shadow:  20px 20px 60px #bebebe,
+              -20px -20px 60px #ffffff;
+}*/
