@@ -11517,6 +11517,12 @@ html {
   margin-bottom: 1rem;
 }
 
+.imgSkills{
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /*
 .carrousel{
   margin-bottom: 3em;
