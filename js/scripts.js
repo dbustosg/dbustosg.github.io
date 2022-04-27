@@ -51,9 +51,19 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 });
 
-let item = 0;
-let $imagen;
-let posicionActual = 0;
+let item,$imagen,posicionActual;
+
+const imagenes = [
+    //EleJones
+    ['assets/imgEleJones/img1.png',
+    'assets/imgEleJones/img2.png',
+    'assets/imgEleJones/img3.png'],
+    //DevErp
+    ['assets/imagenesDevErp/img1.png',
+    'assets/imagenesDevErp/img2.png',
+    'assets/imagenesDevErp/img3.png',
+    'assets/imagenesDevErp/img4.png']
+];
 
 function whoItem(numberItem){
     switch(numberItem){
@@ -66,20 +76,9 @@ function whoItem(numberItem){
             $imagen = document.querySelector('#imgDevErp');
             break;
     }
+    posicionActual = 0;
     renderizarImagen();
 }
-
-const imagenes = [
-    //EleJones
-    ['assets/imgEleJones/img1.png',
-    'assets/imgEleJones/img2.png',
-    'assets/imgEleJones/img3.png'],
-    //DevErp
-    ['assets/imgDevErp/img1.png',
-    'assets/imgDevErp/img2.png',
-    'assets/imgDevErp/img3.png',
-    'assets/imgDevErp/img4.png']
-];
 
 /**
      * Funcion que cambia la foto en la siguiente posicion
