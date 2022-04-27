@@ -62,7 +62,12 @@ const imagenes = [
     ['assets/imgDevErp/img1.png',
     'assets/imgDevErp/img2.png',
     'assets/imgDevErp/img3.png',
-    'assets/imgDevErp/img4.png']
+    'assets/imgDevErp/img4.png'],
+    ['assets/imgCamperApp/img1.png',
+    'assets/imgCamperApp/img2.png',
+    'assets/imgCamperApp/img3.png',
+    'assets/imgCamperApp/img4.png',
+    'assets/imgCamperApp/img5.png',]
 ];
 
 function whoItem(numberItem){
@@ -74,6 +79,10 @@ function whoItem(numberItem){
         case 2:
             item = 1;
             $imagen = document.querySelector('#imgDevErp');
+            break;
+        case 3:
+            item = 2;
+            $imagen = document.querySelector('#imgCamperApp');
             break;
     }
     posicionActual = 0;
