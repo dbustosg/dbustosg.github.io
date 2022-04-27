@@ -59,10 +59,10 @@ const imagenes = [
     'assets/imgEleJones/img2.png',
     'assets/imgEleJones/img3.png'],
     //DevErp
-    ['assets/imagenesDevErp/img1.png',
-    'assets/imagenesDevErp/img2.png',
-    'assets/imagenesDevErp/img3.png',
-    'assets/imagenesDevErp/img4.png']
+    ['assets/imgDevErp/img1.png',
+    'assets/imgDevErp/img2.png',
+    'assets/imgDevErp/img3.png',
+    'assets/imgDevErp/img4.png']
 ];
 
 function whoItem(numberItem){
