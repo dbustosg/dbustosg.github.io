@@ -1,5 +1,5 @@
 export default function LandingSection() {
-  const text = "Search. Found. Done.";
+  const text = "Your search ends here.";
 
   return (
     <section id="home" className="relative flex h-screen w-full items-center justify-center overflow-hidden bg-background">

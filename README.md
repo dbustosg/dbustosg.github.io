@@ -1,6 +1,6 @@
 # Portfolio Profesional
 
-> **Search. Found. Done.** - Un portfolio moderno y responsivo construido con Next.js 15.
+> **Your search ends here.** - Un portfolio moderno y responsivo construido con Next.js 15.
 
 ## 🚀 Características
 
