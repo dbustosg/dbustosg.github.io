@@ -29,7 +29,10 @@ export default function ProfileSection() {
             Software Engineer
           </p>
           <p className="mt-4 max-w-lg text-muted-foreground">
-            I am a passionate software engineer with a knack for building robust and scalable web applications. With expertise in modern frontend and backend technologies, I turn complex problems into elegant, user-friendly solutions.
+            I’m a software engineer who looks beyond the code.
+          </p>
+          <p className="mt-4 max-w-lg text-muted-foreground">
+            Alongside designing and developing scalable systems, I focus on understanding context, requirements, and impact — ensuring technical solutions are aligned with business objectives and delivered effectively.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <Button asChild>
