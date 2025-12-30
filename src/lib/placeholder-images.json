@@ -1,0 +1,10 @@
+{
+  "placeholderImages": [
+    {
+      "id": "daniel-bustos-profile",
+      "description": "Profile picture for Daniel Bustos",
+      "imageUrl": "/photo-portfolio.jpg",
+      "imageHint": "man portrait"
+    }
+  ]
+}
