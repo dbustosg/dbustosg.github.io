@@ -36,7 +36,7 @@ export default function ProfileSection() {
               <Link href="#contact">Get in Touch <Mail className="ml-2 h-4 w-4" /></Link>
             </Button>
             <Button variant="outline" asChild>
-              <a href="/CV_DANIEL BUSTOS GUZMÁN.pdf" download="Daniel_Bustos_Resume.pdf">
+              <a href="/portfolio-profesional/CV_DANIEL BUSTOS GUZMÁN.pdf" download="Daniel_Bustos_Resume.pdf">
                 Download CV <Download className="ml-2 h-4 w-4" />
               </a>
             </Button>
